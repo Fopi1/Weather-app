@@ -1,0 +1,9 @@
+.detailedPageNavbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .navbarIcon {
+    cursor: pointer;
+  }
+}

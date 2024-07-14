@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "/*": ["./*", "./public/*"],
+      "@": ["./src"],
+      "@scss/*": ["./src/scss/*"],
+      // ForecastPage
+      "@locationIcon": ["./src/icons/ForecastPage/searchBar/location.svg"],
+      "@eyeIcon": ["./src/icons/ForecastPage/detailedInformation/Eye.svg"],
+      "@waterDropIcon": [
+        "./src/icons/ForecastPage/detailedInformation/Wind.svg"
+      ],
+      "@windIcon": [
+        "./src/icons/ForecastPage/detailedInformation/Water Drop.svg"
+      ],
+      "@sunIcon": ["./src/icons/ForecastPage/detailedInformation/Sun.svg"],
+      // DetailedForecastPage
+      "@settingsIcon": ["./src/icons/DetailedForecastPage/navbar/settings.svg"],
+      "@geoHintIcon": ["./src/icons/DetailedForecastPage/navbar/geoHint.svg"]
+    },
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

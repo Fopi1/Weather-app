@@ -1,0 +1,28 @@
+@mixin cloudyCircle() {
+  position: absolute;
+  width: 45%;
+  height: 65%;
+  border-radius: 50%;
+  background-color: #011232;
+}
+
+@mixin textFont($font) {
+  font-family: $font, Arial, sans-serif;
+}
+
+@mixin glimmer($X, $Y, $width, $height, $blur) {
+  width: $width;
+  height: $height;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0019ff;
+  transform: translate($X, $Y);
+  filter: blur($blur);
+}
+
+@mixin hoverInformation() {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  font-size: 20px;
+}

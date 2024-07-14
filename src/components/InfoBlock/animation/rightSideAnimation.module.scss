@@ -1,0 +1,71 @@
+@import "../../../scss/_mixins";
+// HoverInformation transition
+.rightHoverInformation {
+  &Enter {
+    display: inline-block;
+    opacity: 0;
+  }
+  &EnterDone {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  &Exit {
+    @extend .rightHoverInformationEnterDone;
+  }
+  &ExitActive {
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  &ExitDone {
+    display: none;
+    opacity: 0;
+  }
+}
+// Image animation
+
+.rightInfoBlock__image {
+  &Enter {
+    opacity: 1;
+    width: 40px;
+  }
+  &EnterActive {
+    opacity: 0;
+    width: 25px;
+    transition: all 0.25s;
+  }
+  &EnterDone {
+    opacity: 1;
+    transform: translate(-190%, -130%);
+    transition: opacity 0.25s;
+    width: 25px;
+  }
+  &Exit {
+    @extend .rightInfoBlock__imageEnterDone;
+  }
+  &ExitActive {
+    opacity: 0;
+    transition: all 0.25s;
+  }
+}
+
+// Text animation
+.rightInfoBlock__text {
+  &EnterActive {
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  &EnterDone {
+    opacity: 1;
+    left: 17px;
+    transform: translateY(40%);
+    transition: opacity 0.25s;
+  }
+  &Exit {
+    @extend .rightInfoBlock__textEnterDone;
+  }
+  &ExitActive {
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+}

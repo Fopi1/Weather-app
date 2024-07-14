@@ -1,0 +1,23 @@
+.sunny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7a00;
+  width: 50%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::after {
+    z-index: 1;
+    display: block;
+    content: "";
+    border-radius: 100%;
+    background-color: #ff7a00;
+    filter: blur(3vh);
+    width: 75%;
+    height: 75%;
+  }
+}

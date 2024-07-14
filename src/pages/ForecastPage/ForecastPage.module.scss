@@ -1,0 +1,12 @@
+.forecastContainer {
+  overflow: hidden;
+  height: 932px;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  background-color: #000000;
+}

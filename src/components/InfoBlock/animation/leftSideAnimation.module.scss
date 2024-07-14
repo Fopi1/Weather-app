@@ -1,0 +1,69 @@
+@import "../../../scss/_mixins";
+// HoverInformation transition
+.leftHoverInformation {
+  &Enter {
+    display: inline-block;
+    opacity: 0;
+  }
+  &EnterActive {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  &EnterDone {
+    display: inline-block;
+    opacity: 1;
+  }
+  &Exit {
+    @extend .leftHoverInformationEnterDone;
+  }
+  &ExitActive {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  &ExitDone {
+    display: none;
+    opacity: 0;
+  }
+}
+// Image animation
+
+.leftInfoBlock__image {
+  &Enter {
+    width: 40px;
+  }
+  &EnterActive {
+    transform: translate(-150%, -80%);
+    width: 30px;
+    transition: all 0.6s;
+  }
+  &EnterDone {
+    transform: translate(-150%, -80%);
+    width: 30px;
+  }
+  &Exit {
+    @extend .leftInfoBlock__imageEnterDone;
+  }
+  &ExitActive {
+    transform: translate(0, -100%);
+    width: 40px;
+    transition: all 0.6s;
+  }
+}
+
+// Text animation
+.leftInfoBlock__text {
+  &EnterActive {
+    transform: translate(-30%, 100%);
+    transition: transform 0.6s;
+  }
+  &EnterDone {
+    transform: translate(-30%, 100%);
+  }
+  &Exit {
+    @extend .leftInfoBlock__textEnterDone;
+  }
+  &ExitActive {
+    transform: translate(0, 100%);
+    transition: transform 0.6s;
+  }
+}
