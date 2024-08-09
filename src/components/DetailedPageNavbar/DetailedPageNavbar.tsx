@@ -1,6 +1,6 @@
 import React from "react";
-import settingsIcon from "@settingsIcon";
-import geoHintIcon from "@geoHintIcon";
+import settingsIcon from "@DetailedForecastPageIcons/navbar/settings.svg";
+import geoHintIcon from "@DetailedForecastPageIcons/navbar/geoHint.svg";
 import classes from "./DetailedPageNavbar.module.scss";
 
 const DetailedPageNavbar = () => {

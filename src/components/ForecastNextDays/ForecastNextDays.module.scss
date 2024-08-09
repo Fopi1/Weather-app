@@ -12,8 +12,9 @@
   width: 82px;
   height: 164px;
   background-color: #171717;
-  box-shadow: inset 0px 0px 78.0952px rgba(77, 74, 183, 0.3);
+  box-shadow: inset 0px 0px 78px rgba(77, 74, 183, 0.3);
   border-radius: 37px;
+  z-index: 1;
 
   &Inner {
     display: flex;

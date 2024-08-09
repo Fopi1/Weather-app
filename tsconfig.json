@@ -10,19 +10,9 @@
       "/*": ["./*", "./public/*"],
       "@": ["./src"],
       "@scss/*": ["./src/scss/*"],
-      // ForecastPage
-      "@locationIcon": ["./src/icons/ForecastPage/searchBar/location.svg"],
-      "@eyeIcon": ["./src/icons/ForecastPage/detailedInformation/Eye.svg"],
-      "@waterDropIcon": [
-        "./src/icons/ForecastPage/detailedInformation/Wind.svg"
-      ],
-      "@windIcon": [
-        "./src/icons/ForecastPage/detailedInformation/Water Drop.svg"
-      ],
-      "@sunIcon": ["./src/icons/ForecastPage/detailedInformation/Sun.svg"],
-      // DetailedForecastPage
-      "@settingsIcon": ["./src/icons/DetailedForecastPage/navbar/settings.svg"],
-      "@geoHintIcon": ["./src/icons/DetailedForecastPage/navbar/geoHint.svg"]
+      "@ForecastPageIcons/*": ["./src/icons/ForecastPage/*"],
+      "@DetailedForecastPageIcons/*": ["./src/icons/DetailedForecastPage/*"],
+      "@components/*": ["./src/components/*"]
     },
 
     /* Bundler mode */

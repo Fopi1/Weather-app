@@ -6,13 +6,6 @@
   width: 300px;
   height: 387px;
 
-  .currentGlimmer {
-    @include glimmer(-20%, -20%, 250px, 285px, 285px);
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
   .currentStroke {
     position: absolute;
     top: -2px;

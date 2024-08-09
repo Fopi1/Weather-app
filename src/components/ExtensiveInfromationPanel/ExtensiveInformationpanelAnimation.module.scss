@@ -1,0 +1,22 @@
+.extensivePanel {
+  &Enter {
+    transform: translateY(0);
+  }
+  &EnterActive {
+    transform: translateY(-400px);
+    transition: transform 500ms;
+  }
+  &EnterDone {
+    transform: translateY(-400px);
+  }
+  &Exit {
+    transform: translateY(-400px);
+  }
+  &ExitActive {
+    transform: translateY(0);
+    transition: transform 500ms;
+  }
+  &ExitDone {
+    transform: translateY(0);
+  }
+}

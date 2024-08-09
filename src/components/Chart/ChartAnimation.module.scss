@@ -1,0 +1,22 @@
+.chart {
+  &Enter {
+    opacity: 1;
+  }
+  &EnterActive {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  &EnterDone {
+    opacity: 0;
+  }
+  &Exit {
+    opacity: 0;
+  }
+  &ExitActive {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+  &ExitDone {
+    opacity: 1;
+  }
+}

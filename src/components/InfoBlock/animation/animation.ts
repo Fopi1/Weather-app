@@ -2,11 +2,11 @@ import leftAnimation from "./leftSideAnimation.module.scss";
 import rightAnimation from "./rightSideAnimation.module.scss";
 export const leftSideAnimationClasses = {
   image: {
-    enter: leftAnimation.leftInfoBlock__imageEnter,
-    enterActive: leftAnimation.leftInfoBlock__imageEnterActive,
-    enterDone: leftAnimation.leftInfoBlock__imageEnterDone,
-    exit: leftAnimation.leftInfoBlock__imageExit,
-    exitActive: leftAnimation.leftInfoBlock__imageExitActive,
+    enter: leftAnimation.leftInfoBlockImageEnter,
+    enterActive: leftAnimation.leftInfoBlockImageEnterActive,
+    enterDone: leftAnimation.leftInfoBlockImageEnterDone,
+    exit: leftAnimation.leftInfoBlockImageExit,
+    exitActive: leftAnimation.leftInfoBlockImageExitActive,
   },
   hoverInformation: {
     enter: leftAnimation.leftHoverInformationEnter,
@@ -17,20 +17,20 @@ export const leftSideAnimationClasses = {
     exitDone: leftAnimation.leftHoverInformationExitDone,
   },
   text: {
-    enterActive: leftAnimation.leftInfoBlock__textEnterActive,
-    enterDone: leftAnimation.leftInfoBlock__textEnterDone,
-    exit: leftAnimation.leftInfoBlock__textExit,
-    exitActive: leftAnimation.leftInfoBlock__textExitActive,
+    enterActive: leftAnimation.leftInfoBlockTextEnterActive,
+    enterDone: leftAnimation.leftInfoBlockTextEnterDone,
+    exit: leftAnimation.leftInfoBlockTextExit,
+    exitActive: leftAnimation.leftInfoBlockTextExitActive,
   },
 };
 
 export const rightSideAnimationClasses = {
   image: {
-    enter: rightAnimation.rightInfoBlock__imageEnter,
-    enterActive: rightAnimation.rightInfoBlock__imageEnterActive,
-    enterDone: rightAnimation.rightInfoBlock__imageEnterDone,
-    exit: rightAnimation.rightInfoBlock__imageExit,
-    exitActive: rightAnimation.rightInfoBlock__imageExitActive,
+    enter: rightAnimation.rightInfoBlockImageEnter,
+    enterActive: rightAnimation.rightInfoBlockImageEnterActive,
+    enterDone: rightAnimation.rightInfoBlockImageEnterDone,
+    exit: rightAnimation.rightInfoBlockImageExit,
+    exitActive: rightAnimation.rightInfoBlockImageExitActive,
   },
   hoverInformation: {
     enter: rightAnimation.rightHoverInformationEnter,
@@ -41,9 +41,9 @@ export const rightSideAnimationClasses = {
     exitDone: rightAnimation.rightHoverInformationExitDone,
   },
   text: {
-    enterActive: rightAnimation.rightInfoBlock__textEnterActive,
-    enterDone: rightAnimation.rightInfoBlock__textEnterDone,
-    exit: rightAnimation.rightInfoBlock__textExit,
-    exitActive: rightAnimation.rightInfoBlock__textExitActive,
+    enterActive: rightAnimation.rightInfoBlockTextEnterActive,
+    enterDone: rightAnimation.rightInfoBlockTextEnterDone,
+    exit: rightAnimation.rightInfoBlockTextExit,
+    exitActive: rightAnimation.rightInfoBlockTextExitActive,
   },
 };

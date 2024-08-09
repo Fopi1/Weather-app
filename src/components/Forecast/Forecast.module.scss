@@ -1,13 +1,8 @@
-@import "../../scss/_variables";
-@import "../../scss/_mixins";
-
-$X: 30%;
-$Y: 30%;
-$width: 239px;
-$height: 131px;
-$blur: 200px;
+@import "@scss/_variables";
+@import "@scss/_mixins";
 
 .forecast {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,13 +13,13 @@ $blur: 200px;
     position: relative;
     width: 100%;
 
-    .nextDaysGlimmer {
-      @include glimmer($X, $Y, $width, $height, $blur);
-      top: 0;
-      left: 0;
+    .nextDaysWrapper {
+      width: 310px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
     }
   }
-
   .detailedInformation {
     display: flex;
     column-gap: 10px;
@@ -32,4 +27,10 @@ $blur: 200px;
     align-items: center;
     justify-content: center;
   }
+}
+
+.infoBlockContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }

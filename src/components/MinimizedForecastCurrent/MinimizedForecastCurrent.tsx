@@ -6,7 +6,6 @@ import classes from "./MinimizedForecastCurrent.module.scss";
 const MinimizedForecastCurrent = () => {
   return (
     <div className={classes.minimizedForecastCurrentWrapper}>
-      <div className={classes.minimizedForecastGlimmer}></div>
       <div className={classes.minimizedForecastStroke}></div>
       <div className={classes.minimizedForecastCurrent}>
         <div className={classes.minimizedForecastCurrentInner}>

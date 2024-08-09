@@ -1,0 +1,8 @@
+.scrollableComponent {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scrollableComponent::-webkit-scrollbar {
+  display: none;
+}

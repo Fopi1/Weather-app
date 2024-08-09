@@ -2,66 +2,68 @@ import React, { FC, useState } from "react";
 import classes from "./Forecast.module.scss";
 import ForecastCurrent from "../ForecastCurrent/ForecastCurrent";
 import ForecastNextDays from "../ForecastNextDays/ForecastNextDays";
-import SwipeableComponent from "../SwipeableComponent/SwipeableComponent";
-import InfoBlockContainer from "../InfoBlockContainer/InfoBlockContainer";
+import ScrollableComponent from "../ScrollableComponent/ScrollableComponent";
 import LeftInfoBlock from "../InfoBlock/LeftInfoBlock";
 import RightInfoBlock from "../InfoBlock/RightInfoBlock";
+import Glimmer, { Position } from "../Glimmer/Glimmer";
 // Alias path to icons
-import eyeIcon from "@eyeIcon";
-import waterDropIcon from "@waterDropIcon";
-import windIcon from "@windIcon";
-import sunIcon from "@sunIcon";
+import eyeIcon from "@ForecastPageIcons/detailedInformation/eye.svg";
+import waterDropIcon from "@ForecastPageIcons/detailedInformation/waterDrop.svg";
+import windIcon from "@ForecastPageIcons/detailedInformation/wind.svg";
+import sunIcon from "@ForecastPageIcons/detailedInformation/sun.svg";
 
-const ICON_URLS: Record<string, string> = {
-  eye: eyeIcon,
-  waterDrop: waterDropIcon,
-  wind: windIcon,
-  sun: sunIcon,
+const nextDaysStyles: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "row",
+  columnGap: "30px",
 };
 
 const Forecast: FC = () => {
-  const [leftInfoBlockFullnes] = useState([
+  const leftInfoBlockFullnes = [
     {
-      icon: ICON_URLS.eye,
+      icon: eyeIcon,
       text: "Visibility",
       hoverInformation: "1000m",
     },
     {
-      icon: ICON_URLS.waterDrop,
+      icon: waterDropIcon,
       text: "Humidity",
       hoverInformation: "21%",
     },
-  ]);
-  const [rightInfoBlockFullness] = useState([
+  ];
+  const rightInfoBlockFullness = [
     {
-      icon: ICON_URLS.wind,
+      icon: windIcon,
       text: "Wind",
       hoverInformation: "7 km",
       additionalHoverInformation: "N - E",
     },
     {
-      icon: ICON_URLS.sun,
+      icon: sunIcon,
       text: "UV",
       hoverInformation: "7",
       additionalHoverInformation: "Strong",
     },
-  ]);
+  ];
 
   return (
     <main className={classes.forecast}>
+      <Glimmer position={Position.TopLeft} />
+      <Glimmer position={Position.Center} />
       <ForecastCurrent />
       <div className={classes.forecastNextDays}>
-        <div className={classes.nextDaysGlimmer}></div>
-        <SwipeableComponent>
-          {Array(6)
-            .fill(0)
-            .map((_, index) => (
-              <ForecastNextDays key={index} />
-            ))}
-        </SwipeableComponent>
+        <div className={classes.nextDaysWrapper}>
+          <ScrollableComponent styles={nextDaysStyles}>
+            {Array(6)
+              .fill(0)
+              .map((_, index) => (
+                <ForecastNextDays key={index} />
+              ))}
+          </ScrollableComponent>
+        </div>
       </div>
       <div className={classes.detailedInformation}>
-        <InfoBlockContainer>
+        <div className={classes.infoBlockContainer}>
           {leftInfoBlockFullnes.map((element, index) => (
             <LeftInfoBlock
               key={index}
@@ -70,8 +72,8 @@ const Forecast: FC = () => {
               hoverInformation={element.hoverInformation}
             />
           ))}
-        </InfoBlockContainer>
-        <InfoBlockContainer>
+        </div>
+        <div className={classes.infoBlockContainer}>
           {rightInfoBlockFullness.map((element, index) => (
             <RightInfoBlock
               key={index}
@@ -81,7 +83,7 @@ const Forecast: FC = () => {
               additionalHoverInformation={element.additionalHoverInformation}
             />
           ))}
-        </InfoBlockContainer>
+        </div>
       </div>
     </main>
   );

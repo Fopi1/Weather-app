@@ -1,0 +1,41 @@
+@import "@scss/__mixins";
+.extensiveInformationPanelWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .extensiveInformationPanel {
+    @include panel(100%, 450px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.hrContainer {
+  width: 100%;
+  height: 50px;
+
+  .hr {
+    width: 50px;
+    border: 2px solid #797979;
+    border-radius: 10px;
+  }
+}
+
+.extensiveInformationPanelInner {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .informationColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

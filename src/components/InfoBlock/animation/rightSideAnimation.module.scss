@@ -24,7 +24,7 @@
 }
 // Image animation
 
-.rightInfoBlock__image {
+.rightInfoBlockImage {
   &Enter {
     opacity: 1;
     width: 40px;
@@ -41,7 +41,7 @@
     width: 25px;
   }
   &Exit {
-    @extend .rightInfoBlock__imageEnterDone;
+    @extend .rightInfoBlockImageEnterDone;
   }
   &ExitActive {
     opacity: 0;
@@ -50,7 +50,7 @@
 }
 
 // Text animation
-.rightInfoBlock__text {
+.rightInfoBlockText {
   &EnterActive {
     opacity: 0;
     transition: opacity 0.25s;
@@ -62,7 +62,7 @@
     transition: opacity 0.25s;
   }
   &Exit {
-    @extend .rightInfoBlock__textEnterDone;
+    @extend .rightInfoBlockTextEnterDone;
   }
   &ExitActive {
     opacity: 0;
