@@ -8,10 +8,12 @@
     "baseUrl": ".",
     "paths": {
       "/*": ["./*", "./public/*"],
-      "@": ["./src"],
+      "@/*": ["./src/*"],
       "@scss/*": ["./src/scss/*"],
+      "@WeatherIcons/*": ["./src/icons/WeatherIcons/*"],
       "@ForecastPageIcons/*": ["./src/icons/ForecastPage/*"],
       "@DetailedForecastPageIcons/*": ["./src/icons/DetailedForecastPage/*"],
+      "@SettingsPageIcons/*": ["./src/icons/SettingsPage/*"],
       "@components/*": ["./src/components/*"]
     },
 

@@ -1,9 +1,7 @@
 @import "../../../scss/_mixins";
 .cloudy {
+  aspect-ratio: 1/0.7;
   width: 100%;
-  height: 100%;
-  max-width: 165px;
-  max-height: 150px;
   position: relative;
 }
 

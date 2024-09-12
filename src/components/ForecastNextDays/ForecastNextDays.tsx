@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./ForecastNextDays.module.scss";
-import Cloudy from "../WeatherIcons/Cloudy/Cloudy";
-import Sunny from "../WeatherIcons/Sunny/Sunny";
+import Cloudy from "@WeatherIcons/Cloudy/Cloudy";
+import Sunny from "@WeatherIcons/Sunny/Sunny";
 
 const ForecastNextDays = () => {
   return (

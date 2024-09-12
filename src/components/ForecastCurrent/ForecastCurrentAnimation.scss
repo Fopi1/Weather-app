@@ -1,0 +1,35 @@
+.closeForecast {
+  position: relative;
+  &-enter-active {
+    height: 110px;
+    transition: height 400ms ease-out;
+  }
+  &-enter-done {
+    height: 110px;
+  }
+}
+
+.closeForecast-enter-active {
+  .currentWeatherIconWrapper {
+    transform: translate(-200%, 300%);
+    width: 51px;
+    transition: width 300ms ease-out, transform 300ms ease-in;
+  }
+  .currentWeatherInfo {
+    transform: translate(270%, 120%);
+    transition: transform 300ms ease-in;
+
+    .currentTemperature {
+      font-size: 24px;
+      transition: font-size 300ms ease-in;
+    }
+    .currentWeather {
+      font-size: 12px;
+      transition: font-size 300ms ease-in;
+    }
+  }
+  .currentDate {
+    transform: translateY(-200%);
+    transition: transform 300ms ease-in;
+  }
+}

@@ -1,0 +1,39 @@
+.openForecast {
+  position: relative;
+  &-enter-active {
+    height: 387px;
+    transition: height 400ms ease-out;
+  }
+  &-enter-done {
+    height: 387px;
+  }
+}
+
+.openForecast-enter-active {
+  .minimizedWeatherIconWrapper {
+    transform: translate(40%, -50%);
+    width: 175px;
+    transition: width 300ms ease-out, transform 300ms ease-out;
+  }
+  .minimizedWeatherInfo {
+    transform: translate(-230%, 70%);
+    transition: transform 300ms ease-in;
+
+    .minimizedTemperature {
+      font-size: 64px;
+      transition: font-size 300ms ease-in;
+    }
+    .minimizedWeather {
+      font-size: 18px;
+      transition: font-size 300ms ease-in;
+    }
+  }
+  .minimizedDate {
+    transform: translate(-100%, 1200%);
+    transition: transform 300ms cubic-bezier(0.3, 0, 1, 1);
+  }
+  .minimizedLocation {
+    transform: translate(-70%, 400%);
+    transition: transform 300ms ease-in;
+  }
+}

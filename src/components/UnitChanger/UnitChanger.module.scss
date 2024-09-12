@@ -1,0 +1,18 @@
+@import "@scss/__mixins";
+.unitChanger {
+  position: relative;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include textFont(Barlow_M);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #797979;
+}
+.unitTitle {
+  color: #f5f5f5;
+}
+.unitsMeasurement {
+  color: #0094ff;
+}

@@ -1,15 +1,21 @@
-import React from "react";
-import "../src/scss/styles.scss";
-import ForecastPage from "./pages/ForecastPage/ForecastPage";
-import DetailedForecastPage from "./pages/DetailedForecastPage/DetailedForecastPage";
+import "@scss/styles.scss";
 import classes from "./App.module.scss";
+import PageRouter from "./components/PageRouter/PageRouter";
+import { RouteType } from "./types/types";
+import { FC } from "react";
 
-const App = () => {
+interface AppProps {
+  routes: RouteType[];
+}
+
+const App: FC<AppProps> = ({ routes }) => {
   return (
-    <div className={classes.app}>
-      {/* <ForecastPage /> */}
-      <DetailedForecastPage />
-    </div>
+    <>
+      <div className={classes.background}></div>
+      <div className={classes.app}>
+        <PageRouter routes={routes} />
+      </div>
+    </>
   );
 };
 

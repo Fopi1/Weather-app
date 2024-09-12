@@ -1,0 +1,24 @@
+@import "@scss/__mixins";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &Icon {
+    cursor: pointer;
+  }
+}
+
+.leftPartNavbar {
+  display: flex;
+  user-select: none;
+  column-gap: 20px;
+}
+
+.pageTitle {
+  @include textFont(Barlow_M);
+  color: #797979;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+}

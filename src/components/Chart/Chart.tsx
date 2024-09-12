@@ -1,8 +1,13 @@
-import React from "react";
-import classes from "./Chart.module.scss";
+import { forwardRef, Ref } from "react";
 import { LineChart, Line, XAxis } from "recharts";
+import classes from "./Chart.module.scss";
 import ScrollableComponent from "../ScrollableComponent/ScrollableComponent";
-const Chart = () => {
+import { CSSTransition } from "react-transition-group";
+import { chartAnimation } from "./ChartAnimation";
+import { useAppSelector } from "/src/store/store";
+const Chart = forwardRef<HTMLDivElement>((_, ref: Ref<HTMLDivElement>) => {
+  const { isPanelOpen } = useAppSelector((state) => state.panelToggle);
+
   const data = [
     { name: "0", temperature: 30 },
     { name: "1am", temperature: 27 },
@@ -20,33 +25,35 @@ const Chart = () => {
   ];
 
   return (
-    <figure className={classes.chart}>
-      <ScrollableComponent>
-        <div className={classes.chartInnerWrapper}>
-          <div className={classes.chartInner}>
-            <LineChart width={600} height={150} data={data}>
-              <XAxis
-                dataKey="name"
-                stroke="#797979"
-                interval={0}
-                tick={{ fontSize: "11px" }}
-                padding={{ right: 15 }}
-              />
-              <Line
-                type="linear"
-                dataKey="temperature"
-                stroke="#4f7693"
-                dot={{ fill: "#717CE2" }}
-              />
-            </LineChart>
+    <CSSTransition in={isPanelOpen} timeout={500} classNames={chartAnimation}>
+      <figure className={classes.chart} ref={ref}>
+        <ScrollableComponent>
+          <div className={classes.chartInnerWrapper}>
+            <div className={classes.chartInner}>
+              <LineChart width={600} height={150} data={data}>
+                <XAxis
+                  dataKey="name"
+                  stroke="#797979"
+                  interval={0}
+                  tick={{ fontSize: "11px" }}
+                  padding={{ right: 15 }}
+                />
+                <Line
+                  type="linear"
+                  dataKey="temperature"
+                  stroke="#4f7693"
+                  dot={{ fill: "#717CE2" }}
+                />
+              </LineChart>
+            </div>
           </div>
-        </div>
-      </ScrollableComponent>
-      <figcaption className={classes.chartCaption}>
-        Today’s Hourly Temperature
-      </figcaption>
-    </figure>
+        </ScrollableComponent>
+        <figcaption className={classes.chartCaption}>
+          Today’s Hourly Temperature
+        </figcaption>
+      </figure>
+    </CSSTransition>
   );
-};
+});
 
 export default Chart;

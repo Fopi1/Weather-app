@@ -19,10 +19,7 @@ const ScrollableComponent: FC<ScrollableComponent> = ({ children, styles }) => {
     setScrollLeft(itemsRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => {
-    setIsMouseDown(false);
-  };
-  const handleMouseLeave = () => {
+  const handleMouseDead = () => {
     setIsMouseDown(false);
   };
 
@@ -40,8 +37,8 @@ const ScrollableComponent: FC<ScrollableComponent> = ({ children, styles }) => {
       className={classes.scrollableComponent}
       ref={itemsRef}
       onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseLeave}
+      onMouseUp={handleMouseDead}
+      onMouseLeave={handleMouseDead}
       onMouseMove={handleMouseMove}
     >
       {children}

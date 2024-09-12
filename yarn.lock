@@ -637,6 +637,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reduxjs/toolkit@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@reduxjs/toolkit@npm:2.2.7"
+  dependencies:
+    immer: "npm:^10.0.3"
+    redux: "npm:^5.0.1"
+    redux-thunk: "npm:^3.1.0"
+    reselect: "npm:^5.1.0"
+  peerDependencies:
+    react: ^16.9.0 || ^17.0.0 || ^18
+    react-redux: ^7.2.1 || ^8.1.3 || ^9.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-redux:
+      optional: true
+  checksum: 10c0/7761a91adac2b5e1d50a8163ba5441480bb86a3a80b7583037c27a88463394b132dd7592862fc2be03aa7ab98a6e1710549889986dc0d3f033c169a3ba2cb02e
+  languageName: node
+  linkType: hard
+
 "@remix-run/router@npm:1.19.0":
   version: 1.19.0
   resolution: "@remix-run/router@npm:1.19.0"
@@ -905,15 +925,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-grid-layout@npm:^1":
-  version: 1.3.5
-  resolution: "@types/react-grid-layout@npm:1.3.5"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: 10c0/abd2a1dda9625c753ff2571a10b69740b2fb9ed1d3141755d54d5814cc12a9701c7c5cd78e8797e945486b441303b82543be71043a32d6a988b57a14237f93c6
-  languageName: node
-  linkType: hard
-
 "@types/react-swipeable-views@npm:^0":
   version: 0.13.5
   resolution: "@types/react-swipeable-views@npm:0.13.5"
@@ -946,6 +957,13 @@ __metadata:
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
   checksum: 10c0/8663ff927234d1c5fcc04b33062cb2b9fcfbe0f5f351ed26c4d1e1581657deebd506b41ff7fdf89e787e3d33ce05854bc01686379b89e9c49b564c4cfa988efa
+  languageName: node
+  linkType: hard
+
+"@types/use-sync-external-store@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@types/use-sync-external-store@npm:0.0.3"
+  checksum: 10c0/82824c1051ba40a00e3d47964cdf4546a224e95f172e15a9c62aa3f118acee1c7518b627a34f3aa87298a2039f982e8509f92bfcc18bea7c255c189c293ba547
   languageName: node
   linkType: hard
 
@@ -1354,13 +1372,6 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 10c0/1f90262d5f6230a17e27d0c190b09d47ebe7efdd76a03b5a1127863f7b3c9aec4c3e6c8bb3a7bbf81d553d56a1fd35728f5a8ef4c63f867ac8d690109742a8c1
-  languageName: node
-  linkType: hard
-
-"clsx@npm:^1.1.1":
-  version: 1.2.1
-  resolution: "clsx@npm:1.2.1"
-  checksum: 10c0/34dead8bee24f5e96f6e7937d711978380647e936a22e76380290e35486afd8634966ce300fc4b74a32f3762c7d4c0303f442c3e259f4ce02374eb0c82834f27
   languageName: node
   linkType: hard
 
@@ -1881,13 +1892,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-equals@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "fast-equals@npm:4.0.3"
-  checksum: 10c0/87fd2609c945ee61e9ed4d041eb2a8f92723fc02884115f67e429dd858d880279e962334894f116b3e9b223f387d246e3db5424ae779287849015ddadbf5ff27
-  languageName: node
-  linkType: hard
-
 "fast-equals@npm:^5.0.1":
   version: 5.0.1
   resolution: "fast-equals@npm:5.0.1"
@@ -1984,26 +1988,6 @@ __metadata:
     cross-spawn: "npm:^7.0.0"
     signal-exit: "npm:^4.0.1"
   checksum: 10c0/9700a0285628abaeb37007c9a4d92bd49f67210f09067638774338e146c8e9c825c5c877f072b2f75f41dc6a2d0be8664f79ffc03f6576649f54a84fb9b47de0
-  languageName: node
-  linkType: hard
-
-"framer-motion@npm:^11.3.21":
-  version: 11.3.21
-  resolution: "framer-motion@npm:11.3.21"
-  dependencies:
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    "@emotion/is-prop-valid": "*"
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/is-prop-valid":
-      optional: true
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/47ea88207920800294159f20d89d217c0118cbe2f5b7c4f1204490a04ac379a60e4ba323bfb101f334155014ebf07b51ad70a4d67b0363043f9d1d00347b1b3b
   languageName: node
   linkType: hard
 
@@ -2203,6 +2187,13 @@ __metadata:
   version: 5.3.1
   resolution: "ignore@npm:5.3.1"
   checksum: 10c0/703f7f45ffb2a27fb2c5a8db0c32e7dee66b33a225d28e8db4e1be6474795f606686a6e3bcc50e1aa12f2042db4c9d4a7d60af3250511de74620fbed052ea4cd
+  languageName: node
+  linkType: hard
+
+"immer@npm:^10.0.3":
+  version: 10.1.1
+  resolution: "immer@npm:10.1.1"
+  checksum: 10c0/b749e10d137ccae91788f41bd57e9387f32ea6d6ea8fd7eb47b23fd7766681575efc7f86ceef7fe24c3bc9d61e38ff5d2f49c2663b2b0c056e280a4510923653
   languageName: node
   linkType: hard
 
@@ -2881,7 +2872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.x, prop-types@npm:^15.5.4, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.4, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -2918,19 +2909,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-draggable@npm:^4.0.3, react-draggable@npm:^4.4.5":
-  version: 4.4.6
-  resolution: "react-draggable@npm:4.4.6"
-  dependencies:
-    clsx: "npm:^1.1.1"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    react: ">= 16.3.0"
-    react-dom: ">= 16.3.0"
-  checksum: 10c0/1e8cf47414a8554caa68447e5f27749bc40e1eabb4806e2dadcb39ab081d263f517d6aaec5231677e6b425603037c7e3386d1549898f9ffcc98a86cabafb2b9a
-  languageName: node
-  linkType: hard
-
 "react-event-listener@npm:^0.6.0":
   version: 0.6.6
   resolution: "react-event-listener@npm:0.6.6"
@@ -2944,27 +2922,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-grid-layout@npm:^1.4.4":
-  version: 1.4.4
-  resolution: "react-grid-layout@npm:1.4.4"
-  dependencies:
-    clsx: "npm:^2.0.0"
-    fast-equals: "npm:^4.0.3"
-    prop-types: "npm:^15.8.1"
-    react-draggable: "npm:^4.4.5"
-    react-resizable: "npm:^3.0.5"
-    resize-observer-polyfill: "npm:^1.5.1"
-  peerDependencies:
-    react: ">= 16.3.0"
-    react-dom: ">= 16.3.0"
-  checksum: 10c0/3ff5715e2f19816d9c231053ca7e4d9c6c19893282d13b9dbfb3b748309d4c687d6bc9cffd6982a1e72df20d9f2560cf6ee87fde2442002a1b848fa9f9613d63
-  languageName: node
-  linkType: hard
-
-"react-is@npm:^16.10.2, react-is@npm:^16.13.1":
+"react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react-is@npm:18.3.1"
+  checksum: 10c0/f2f1e60010c683479e74c63f96b09fb41603527cd131a9959e2aee1e5a8b0caf270b365e5ca77d4a6b18aae659b60a86150bb3979073528877029b35aecd2072
+  languageName: node
+  linkType: hard
+
+"react-redux@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "react-redux@npm:9.1.2"
+  dependencies:
+    "@types/use-sync-external-store": "npm:^0.0.3"
+    use-sync-external-store: "npm:^1.0.0"
+  peerDependencies:
+    "@types/react": ^18.2.25
+    react: ^18.0
+    redux: ^5.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    redux:
+      optional: true
+  checksum: 10c0/56ac98228e011b26e0202346af9c8dd408ad5ea8235d8761c8e05ea0953b8ca801cdf9d1f481fdec7b285d7f30ceef7238b46b3df7636ef77dd5c2ea8c5be5b2
   languageName: node
   linkType: hard
 
@@ -2972,18 +2959,6 @@ __metadata:
   version: 0.14.2
   resolution: "react-refresh@npm:0.14.2"
   checksum: 10c0/875b72ef56b147a131e33f2abd6ec059d1989854b3ff438898e4f9310bfcc73acff709445b7ba843318a953cb9424bcc2c05af2b3d80011cee28f25aef3e2ebb
-  languageName: node
-  linkType: hard
-
-"react-resizable@npm:^3.0.5":
-  version: 3.0.5
-  resolution: "react-resizable@npm:3.0.5"
-  dependencies:
-    prop-types: "npm:15.x"
-    react-draggable: "npm:^4.0.3"
-  peerDependencies:
-    react: ">= 16.3"
-  checksum: 10c0/cfe50aa6efb79e0aa09bd681a5beab2fcd1186737c4952eb4c3974ed9395d5d263ccd1130961d06b8f5e24c8f544dd2967b5c740ce68719962d1771de7bdb350
   languageName: node
   linkType: hard
 
@@ -3115,14 +3090,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recharts@npm:^2.12.7":
-  version: 2.12.7
-  resolution: "recharts@npm:2.12.7"
+"recharts@npm:^2.13.0-alpha.5":
+  version: 2.13.0-alpha.5
+  resolution: "recharts@npm:2.13.0-alpha.5"
   dependencies:
     clsx: "npm:^2.0.0"
     eventemitter3: "npm:^4.0.1"
     lodash: "npm:^4.17.21"
-    react-is: "npm:^16.10.2"
+    react-is: "npm:^18.3.1"
     react-smooth: "npm:^4.0.0"
     recharts-scale: "npm:^0.4.4"
     tiny-invariant: "npm:^1.3.1"
@@ -3130,7 +3105,23 @@ __metadata:
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/2522d841a1f4e4c0a37046ddb61fa958ac37a66df63dcd4c6cb9113e3f7a71892d74e44494a55bc40faa0afd74d9cf58fec3d2ce53a8ddf997e75367bdd033fc
+  checksum: 10c0/0e67cab3334549f1d2454bc6ae0aa8b72830d6df5d1c625f02dd04756cba193479b7332ec5908a844de88bd1b39d8f9c7e8398d5991fa0c9f5b6267d41746bd4
+  languageName: node
+  linkType: hard
+
+"redux-thunk@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "redux-thunk@npm:3.1.0"
+  peerDependencies:
+    redux: ^5.0.0
+  checksum: 10c0/21557f6a30e1b2e3e470933247e51749be7f1d5a9620069a3125778675ce4d178d84bdee3e2a0903427a5c429e3aeec6d4df57897faf93eb83455bc1ef7b66fd
+  languageName: node
+  linkType: hard
+
+"redux@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "redux@npm:5.0.1"
+  checksum: 10c0/b10c28357194f38e7d53b760ed5e64faa317cc63de1fb95bc5d9e127fab956392344368c357b8e7a9bedb0c35b111e7efa522210cfdc3b3c75e5074718e9069c
   languageName: node
   linkType: hard
 
@@ -3148,10 +3139,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resize-observer-polyfill@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "resize-observer-polyfill@npm:1.5.1"
-  checksum: 10c0/5e882475067f0b97dc07e0f37c3e335ac5bc3520d463f777cec7e894bb273eddbfecb857ae668e6fb6881fd6f6bb7148246967172139302da50fa12ea3a15d95
+"reselect@npm:^5.1.0":
+  version: 5.1.1
+  resolution: "reselect@npm:5.1.1"
+  checksum: 10c0/219c30da122980f61853db3aebd173524a2accd4b3baec770e3d51941426c87648a125ca08d8c57daa6b8b086f2fdd2703cb035dd6231db98cdbe1176a71f489
   languageName: node
   linkType: hard
 
@@ -3512,13 +3503,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.4.0":
-  version: 2.6.3
-  resolution: "tslib@npm:2.6.3"
-  checksum: 10c0/2598aef53d9dbe711af75522464b2104724d6467b26a60f2bdac8297d2b5f1f6b86a71f61717384aa8fd897240467aaa7bcc36a0700a0faf751293d1331db39a
-  languageName: node
-  linkType: hard
-
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -3603,6 +3587,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:^1.0.0":
+  version: 1.2.2
+  resolution: "use-sync-external-store@npm:1.2.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/23b1597c10adf15b26ade9e8c318d8cc0abc9ec0ab5fc7ca7338da92e89c2536abd150a5891bf076836c352fdfa104fc7231fb48f806fd9960e0cbe03601abaf
+  languageName: node
+  linkType: hard
+
 "victory-vendor@npm:^36.6.8":
   version: 36.9.2
   resolution: "victory-vendor@npm:36.9.2"
@@ -3678,10 +3671,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "weather-app@workspace:."
   dependencies:
+    "@reduxjs/toolkit": "npm:^2.2.7"
     "@types/node": "npm:^20.14.9"
     "@types/react": "npm:^18.2.66"
     "@types/react-dom": "npm:^18.2.22"
-    "@types/react-grid-layout": "npm:^1"
     "@types/react-swipeable-views": "npm:^0"
     "@types/react-transition-group": "npm:^4"
     "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
@@ -3690,16 +3683,16 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.6"
-    framer-motion: "npm:^11.3.21"
     normalize.css: "npm:^8.0.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    react-grid-layout: "npm:^1.4.4"
+    react-redux: "npm:^9.1.2"
     react-router-dom: "npm:^6.26.0"
     react-swipeable: "npm:^7.0.1"
     react-swipeable-views: "npm:^0.14.0"
     react-transition-group: "npm:^4.4.5"
-    recharts: "npm:^2.12.7"
+    recharts: "npm:^2.13.0-alpha.5"
+    redux: "npm:^5.0.1"
     sass: "npm:^1.77.1"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.2.0"

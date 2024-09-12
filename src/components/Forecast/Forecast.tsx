@@ -1,11 +1,10 @@
-import React, { FC, useState } from "react";
+import React from "react";
 import classes from "./Forecast.module.scss";
 import ForecastCurrent from "../ForecastCurrent/ForecastCurrent";
 import ForecastNextDays from "../ForecastNextDays/ForecastNextDays";
 import ScrollableComponent from "../ScrollableComponent/ScrollableComponent";
 import LeftInfoBlock from "../InfoBlock/LeftInfoBlock";
 import RightInfoBlock from "../InfoBlock/RightInfoBlock";
-import Glimmer, { Position } from "../Glimmer/Glimmer";
 // Alias path to icons
 import eyeIcon from "@ForecastPageIcons/detailedInformation/eye.svg";
 import waterDropIcon from "@ForecastPageIcons/detailedInformation/waterDrop.svg";
@@ -18,7 +17,7 @@ const nextDaysStyles: React.CSSProperties = {
   columnGap: "30px",
 };
 
-const Forecast: FC = () => {
+const Forecast = () => {
   const leftInfoBlockFullnes = [
     {
       icon: eyeIcon,
@@ -48,8 +47,6 @@ const Forecast: FC = () => {
 
   return (
     <main className={classes.forecast}>
-      <Glimmer position={Position.TopLeft} />
-      <Glimmer position={Position.Center} />
       <ForecastCurrent />
       <div className={classes.forecastNextDays}>
         <div className={classes.nextDaysWrapper}>

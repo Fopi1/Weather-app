@@ -1,7 +1,7 @@
-import React, { FC, useState } from "react";
-import classes from "./InfoBlock.module.scss";
-import { leftSideAnimationClasses } from "./animation/animation";
+import { FC, useState } from "react";
 import { CSSTransition } from "react-transition-group";
+import classes from "./InfoBlock.module.scss";
+import { leftSideAnimationClasses } from "./animation/leftSideAnimation/animation";
 
 interface InfoBlockProps {
   icon: string;
@@ -28,7 +28,7 @@ const LeftInfoBlock: FC<InfoBlockProps> = ({
             in={isHover}
             timeout={600}
             className={classes.infoBlockImage}
-            classNames={{ ...leftSideAnimationClasses.image }}
+            classNames={leftSideAnimationClasses.image}
           >
             <img src={icon} alt="" />
           </CSSTransition>
@@ -36,7 +36,7 @@ const LeftInfoBlock: FC<InfoBlockProps> = ({
             in={isHover}
             timeout={600}
             className={classes.infoBlockText}
-            classNames={{ ...leftSideAnimationClasses.text }}
+            classNames={leftSideAnimationClasses.text}
           >
             <span>{text}</span>
           </CSSTransition>
@@ -45,7 +45,7 @@ const LeftInfoBlock: FC<InfoBlockProps> = ({
           in={isHover}
           timeout={600}
           className={classes.leftSideHoverInformation}
-          classNames={{ ...leftSideAnimationClasses.hoverInformation }}
+          classNames={leftSideAnimationClasses.hoverInformation}
         >
           <span>{hoverInformation}</span>
         </CSSTransition>
